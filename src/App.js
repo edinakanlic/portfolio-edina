@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './components/About';
+import SingleProject from './pages/SingleProject';
+import Projects from './pages/Projects';
+import AboutSinglePage from './pages/AboutSinglePage';
+import Error from './pages/Error';
+
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        <Route exact path='/projects' element={<Projects />} />
+        <Route exact path='/about' element={<AboutSinglePage />} />
+        <Route exact path='/projects/:slug' element={<SingleProject />} />
+        <Route path='*' element={<Error />} />
+      </Routes>
+    </>
   );
 }
 
