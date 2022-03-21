@@ -317,7 +317,7 @@ h6 {
   margin-bottom: 2rem;
 }
 .hero-info p {
-  width: 11girem;
+  width: 10rem;
   line-height: 1.8;
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
@@ -453,7 +453,6 @@ h6 {
   padding-bottom: 1rem;
   max-width: 30em;
   color: var(--darkGrey);
-  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
   line-height: 1.8;
@@ -467,7 +466,6 @@ h6 {
   padding-left: 2rem;
   max-width: 35em;
   color: var(--darkGrey);
-  /* font-size: 1rem; */
   font-weight: bold;
   letter-spacing: 0.2rem;
   line-height: 1.8;
@@ -516,6 +514,9 @@ h6 {
     grid-template-columns: 1fr 1fr;
     margin-top: 1rem;
   }
+  .about-single-info{
+    font-size: 1rem;
+  }
   .about-photo {
     width: 16rem;
     height: 21rem;
@@ -550,9 +551,7 @@ h6 {
     height: 25rem;
   }
   .about-info {
-    font-size: 1.4rem;
-  }
-  .about-info {
+    font-size: 1.3rem;
     align-self: center;
   }
   .about-single-img {
