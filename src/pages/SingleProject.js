@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { withRouter } from '../context';
 import { ProjectContext } from '../context';
 import { Link } from 'react-router-dom';
+import Title from '../components/Title';
 import Languages from '../components/Languages';
 import Footer from '../components/Footer';
 
@@ -35,6 +36,7 @@ class SingleProject extends Component {
     return (
       <>
         <section className='single-project'>
+            <Title title={name} />
           <div className='single-project-container'>
             <article className='photo'>
               <img src={image} alt={name} />
