@@ -10,21 +10,25 @@ const Hero = () => {
       <div className='hero-center'>
         <article className='hero-info'>
           <h1>Hi, my name is Edina Kanlić</h1>
-          <p>
-            junior front end developer
-            <span className='right-angle'>
-              <FaAngleDoubleRight />
-            </span>
-            mathematician
-            <span className='right-angle'>
-              <FaAngleDoubleRight />
-            </span>
-            math teacher
-          </p>
+            <p>
+              junior front end developer
+              <span className='right-angle'>
+                <FaAngleDoubleRight />
+              </span>
+            </p>
+          <div className='jobs-container'>
+            <p>
+              mathematician
+              <span className='right-angle'>
+                <FaAngleDoubleRight />
+              </span>
+            </p>
+            <p> math teacher</p>
+          </div>
+
           <a href='#about' className='btn-primary'>
-          explore
+            explore
           </a>
-       
         </article>
 
         <article className='hero-images'>

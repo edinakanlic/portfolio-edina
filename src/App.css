@@ -336,6 +336,13 @@ h6 {
   justify-self: start;
   margin-left: 2rem;
 }
+/* .jobs-container {
+  display: flexbox;
+  flex-wrap: wrap;
+}
+.jobs-container p {
+  flex-grow: 1;
+} */
 
 .hero-info h1 {
   color: var(--mainColor);
@@ -393,6 +400,7 @@ h6 {
   .banner h1 {
     font-size: 3rem;
   }
+
 }
 @media screen and (min-width: 992px) {
   .banner {
@@ -432,6 +440,7 @@ h6 {
   width: 15rem;
   height: 20rem;
 }
+
 .about-single-img {
   position: relative;
   margin: 1rem 0 2rem 0;
@@ -540,6 +549,8 @@ h6 {
   }
   .about-single {
     margin: -2rem auto;
+    text-align: center;
+    width: 80vw;
   }
   .about-single-info {
     margin: 3.5rem auto;
@@ -670,7 +681,7 @@ h6 {
     width: 95vw;
     max-width: 1170px;
   }
-   .categories {
+  .categories {
     margin-top: 2rem;
     margin-bottom: 4rem;
     display: flex;
@@ -806,7 +817,7 @@ h6 {
   text-align: center;
 }
 @media screen and (min-width: 992px) {
-  .single-room-images,
+ 
   .single-project-container,
   .project-languages {
     width: 95vw;
@@ -859,7 +870,6 @@ h6 {
     border-radius: 4%;
     border: 3px solid #180927;
     box-shadow: var(--darkShadow);
-   
   }
 }
 @media screen and (min-width: 992px) {
@@ -898,8 +908,8 @@ h6 {
   .person-img {
     width: 17rem;
   }
-  /* end of roomlist */
-  /*  rooms fitler*/
+  /* end of projectlist */
+  /*  projects fitler*/
   .filter-container {
     padding: 5rem 0;
   }
@@ -1002,16 +1012,19 @@ h6 {
 .contact-container {
   text-align: center;
   margin-top: 1.2rem;
+  width: 80vw;
 }
 .contacts-container {
   list-style-type: none;
   text-align: center;
   display: flex;
+  flex-wrap: wrap !important;
   justify-content: center;
   margin-top: -0.5rem;
 }
 .single-contact {
   margin: 0.9rem 1.3rem;
+  flex-grow: 1;
 }
 .single-contact h6 {
   letter-spacing: 0.15rem;
@@ -1023,6 +1036,18 @@ h6 {
 }
 .single-contact a:hover {
   color: var(--darkGrey);
+}
+
+@media screen and (min-width: 776px) {
+  .contact-container {
+    width: 90vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contact-container {
+    width: 95vw;
+    max-width: 1170px;
+  }
 }
 
 /* end of contact */
