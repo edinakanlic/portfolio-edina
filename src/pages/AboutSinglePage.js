@@ -10,8 +10,8 @@ import { FaUsersCog } from 'react-icons/fa';
 export default function AboutSinglePage() {
   return (
     <>
-      <Title title='about me' />
       <section className='about-single'>
+        <Title title='about me' />
         <div className='about-center'>
           <article className='about-single-img'>
             <img src={img} alt='about me' className='about-single-photo' />
